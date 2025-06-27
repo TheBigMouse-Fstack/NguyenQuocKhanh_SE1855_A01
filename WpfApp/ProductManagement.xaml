@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:WpfApp"
         mc:Ignorable="d"
         Title="ProductManagement" Height="500" Width="850">
-    <Grid>
+    <Grid Margin="0,0,10,-6">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="791*"/>
             <ColumnDefinition Width="59*"/>
@@ -15,7 +15,7 @@
             <RowDefinition Height="327*"/>
             <RowDefinition Height="157*"/>
         </Grid.RowDefinitions>
-        <ListView x:Name="lvProduct" Margin="0,0,0,146" Grid.ColumnSpan="2">
+        <ListView x:Name="lvProduct" Margin="0,0,103,146">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="ProductID" DisplayMemberBinding="{Binding ProductID}" />
@@ -32,11 +32,9 @@
             </ListView.View>
         </ListView>
 
-        <Label Content="Product Information" HorizontalAlignment="Left" Margin="383,210,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
-
-        <Button x:Name="btnAddProduct" Content="Add Product" Margin="399,241,0,0" Width="110" HorizontalAlignment="Left" VerticalAlignment="Top" Click="btnAddProduct_Click"/>
-        <Button x:Name="btnUpdateProduct" Content="Update Product" Margin="538,241,0,0" Width="110" HorizontalAlignment="Left" VerticalAlignment="Top" Click="btnUpdateProduct_Click"/>
-        <Button x:Name="btnRemoveProduct" Content="Remove Product" Margin="680,240,0,0" Width="110" HorizontalAlignment="Left" VerticalAlignment="Top" Click="btnRemoveProduct_Click"/>
+        <Button x:Name="btnAddProduct" Content="Add Product" Margin="42,281,0,0" Width="110" HorizontalAlignment="Left" VerticalAlignment="Top" Click="btnAddProduct_Click"/>
+        <Button x:Name="btnUpdateProduct" Content="Update Product" Margin="42,327,0,0" Width="110" HorizontalAlignment="Left" VerticalAlignment="Top" Click="btnUpdateProduct_Click" Grid.RowSpan="2"/>
+        <Button x:Name="btnRemoveProduct" Content="Remove Product" Margin="42,47,0,0" Width="110" HorizontalAlignment="Left" VerticalAlignment="Top" Click="btnRemoveProduct_Click" Grid.Row="1"/>
 
         <Label Content="ProductID:" Margin="32,237,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <TextBox x:Name="txtSearchProductID" Margin="112,241,0,0" Width="120" HorizontalAlignment="Left" VerticalAlignment="Top"/>

@@ -5,14 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp"
         mc:Ignorable="d"
-        Title="Welcome" Height="450" Width="800">
-    <Grid>
-        <Label Content="PRN212 Assignment 01" HorizontalAlignment="Center" Margin="0,30,0,0" VerticalAlignment="Top" Height="41" Width="214" FontSize="20"/>
-        <Label Content="Building a Sales Order Management System using WPF and LINQ" HorizontalAlignment="Left" Margin="119,68,0,0" VerticalAlignment="Top" Height="41" Width="588" FontSize="20"/>
-        <Label Content="Sales Management System (SMS)" HorizontalAlignment="Center" Margin="0,114,0,0" VerticalAlignment="Top" Height="41" Width="308" FontSize="20"/>
-        <Button x:Name="btnEmployeeLogin" Content="Employee Login" HorizontalAlignment="Center" VerticalAlignment="Top" Height="43" Width="286" Margin="0,172,0,0" Click="btnEmployeeLogin_Click"/>
-        <Button x:Name="btnCustomerLogin" Content="Customer Login" HorizontalAlignment="Center" Margin="0,225,0,0" VerticalAlignment="Top" Height="42" Width="286" Click="btnCustomerLogin_Click"/>
-        <Button x:Name="btnExit" Content="Exit" HorizontalAlignment="Center" Margin="0,300,0,0" VerticalAlignment="Top" Height="42" Width="286" Click="btnExit_Click"/>
+        Title="Welcome" Height="407" Width="777">
+    <Grid Margin="0,0,0,102">
+        <Label Content="Sales Management System (SMS)" HorizontalAlignment="Left" Margin="258,76,0,0" VerticalAlignment="Top" Height="41" Width="308" FontSize="20"/>
+        <Button x:Name="btnEmployeeLogin" Content="Employee Login" HorizontalAlignment="Left" VerticalAlignment="Top" Height="43" Width="286" Margin="100,159,0,0" Click="btnEmployeeLogin_Click"/>
+        <Button x:Name="btnCustomerLogin" Content="Customer Login" HorizontalAlignment="Left" Margin="423,159,0,0" VerticalAlignment="Top" Height="42" Width="286" Click="btnCustomerLogin_Click"/>
+        <Button x:Name="btnExit" Content="Exit" HorizontalAlignment="Center" Margin="0,236,0,0" VerticalAlignment="Top" Height="42" Width="286" Click="btnExit_Click"/>
 
     </Grid>
 </Window>

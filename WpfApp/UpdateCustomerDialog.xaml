@@ -41,8 +41,8 @@
             </StackPanel>
 
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,20,0,0">
-                <Button x:Name="btnSave" Content="Save" Width="80" Margin="5" Click="btnSave_Click"/>
-                <Button x:Name="btnCancel" Content="Cancel" Width="80" Margin="5" Click="btnCancel_Click"/>
+                <Button x:Name="btnSave" Content="Save" Width="45" Click="btnSave_Click" Height="51"/>
+                <Button x:Name="btnCancel" Content="Cancel" Width="45" Click="btnCancel_Click" Height="51"/>
             </StackPanel>
         </StackPanel>
     </Grid>

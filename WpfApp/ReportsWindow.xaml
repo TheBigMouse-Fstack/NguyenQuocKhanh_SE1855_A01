@@ -5,14 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp"
         mc:Ignorable="d"
-        Title="ReportsWindow" Height="500" Width="800">
-    <Grid Margin="10">
+        Title="ReportsWindow" Height="389" Width="800">
+    <Grid Margin="10,10,10,-6">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="0,0,0,10">
+        <StackPanel Grid.Row="1" Orientation="Vertical" Margin="-1,96,1,68">
             <Label Content="From:" VerticalAlignment="Center"/>
             <DatePicker x:Name="FromDatePicker" Width="120" Margin="5,0"/>
             <Label Content="To:" VerticalAlignment="Center" Margin="10,0,0,0"/>
@@ -22,7 +22,7 @@
             <Button x:Name="GenerateReportButton" Content="Generate Report" Width="120" Margin="10,0,0,0" Click="GenerateReportButton_Click"/>
         </StackPanel>
 
-        <ListView x:Name="lvReport" Grid.Row="1" Margin="0">
+        <ListView x:Name="lvReport" Grid.Row="1" Height="74" VerticalAlignment="Top">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="Order ID" DisplayMemberBinding="{Binding OrderID}" Width="100"/>
