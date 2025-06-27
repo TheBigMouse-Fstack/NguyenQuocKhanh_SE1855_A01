@@ -1,0 +1,23 @@
+﻿<Window x:Class="WpfApp.CustomerOrderWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Customer Orders" Height="450" Width="900" WindowStartupLocation="CenterScreen">
+    <Grid Margin="10">
+        <Label Content="Your Orders" FontSize="18" FontWeight="Bold" Margin="0,0,0,10"/>
+
+        <ListView x:Name="lvCustomerOrders" Margin="0,40,0,0">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Order ID" DisplayMemberBinding="{Binding OrderID}" Width="80"/>
+                    <GridViewColumn Header="Customer ID" DisplayMemberBinding="{Binding CustomerID}" Width="90"/>
+                    <GridViewColumn Header="Employee ID" DisplayMemberBinding="{Binding EmployeeID}" Width="90"/>
+                    <GridViewColumn Header="Order Date" DisplayMemberBinding="{Binding OrderDate}" Width="110"/>
+                    <GridViewColumn Header="Product ID" DisplayMemberBinding="{Binding ProductID}" Width="80"/>
+                    <GridViewColumn Header="Unit Price" DisplayMemberBinding="{Binding UnitPrice}" Width="90"/>
+                    <GridViewColumn Header="Quantity" DisplayMemberBinding="{Binding Quantity}" Width="80"/>
+                    <GridViewColumn Header="Discount" DisplayMemberBinding="{Binding Discount}" Width="80"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</Window>

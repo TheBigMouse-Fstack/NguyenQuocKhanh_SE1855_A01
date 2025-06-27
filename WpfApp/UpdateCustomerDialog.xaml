@@ -1,0 +1,49 @@
+﻿<Window x:Class="WpfApp.UpdateCustomerDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp"
+        mc:Ignorable="d"
+        Title="Update Customer" Height="450" Width="500" WindowStartupLocation="CenterScreen">
+    <Grid Margin="20">
+        <Label Content="Update Customer" FontWeight="Bold" FontSize="16" Margin="0,0,0,20"/>
+
+        <StackPanel Orientation="Vertical" Margin="0,30,0,0">
+            <StackPanel Orientation="Horizontal" Margin="0,5">
+                <Label Content="Ma khach hang:" Width="130"/>
+                <TextBox x:Name="txtCustomerID" Width="250" IsReadOnly="True"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="0,5">
+                <Label Content="Ten cong ty:" Width="130"/>
+                <TextBox x:Name="txtCompany" Width="250"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="0,5">
+                <Label Content="Ten lien lac:" Width="130"/>
+                <TextBox x:Name="txtContactName" Width="250"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="0,5">
+                <Label Content="Tieu de lien lac:" Width="130"/>
+                <TextBox x:Name="txtContactTitle" Width="250"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="0,5">
+                <Label Content="Dia chi:" Width="130"/>
+                <TextBox x:Name="txtAddress" Width="250" Height="30"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="0,5">
+                <Label Content="So dien thoai:" Width="130"/>
+                <TextBox x:Name="txtPhone" Width="250"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,20,0,0">
+                <Button x:Name="btnSave" Content="Save" Width="80" Margin="5" Click="btnSave_Click"/>
+                <Button x:Name="btnCancel" Content="Cancel" Width="80" Margin="5" Click="btnCancel_Click"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

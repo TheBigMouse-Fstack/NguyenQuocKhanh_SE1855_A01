@@ -1,0 +1,46 @@
+﻿<Window x:Class="WpfApp.ProductManagement"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp"
+        mc:Ignorable="d"
+        Title="ProductManagement" Height="500" Width="850">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="791*"/>
+            <ColumnDefinition Width="59*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="327*"/>
+            <RowDefinition Height="157*"/>
+        </Grid.RowDefinitions>
+        <ListView x:Name="lvProduct" Margin="0,0,0,146" Grid.ColumnSpan="2">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="ProductID" DisplayMemberBinding="{Binding ProductID}" />
+                    <GridViewColumn Header="ProductName" DisplayMemberBinding="{Binding ProductName}" />
+                    <GridViewColumn Header="SupplierID" DisplayMemberBinding="{Binding SupplierID}" />
+                    <GridViewColumn Header="CategoryID" DisplayMemberBinding="{Binding CategoryID}" />
+                    <GridViewColumn Header="Quantity/Unit" DisplayMemberBinding="{Binding QuantityPerUnit}" />
+                    <GridViewColumn Header="Unit Price" DisplayMemberBinding="{Binding UnitPrice}" />
+                    <GridViewColumn Header="In Stock" DisplayMemberBinding="{Binding UnitsInStock}" />
+                    <GridViewColumn Header="On Order" DisplayMemberBinding="{Binding UnitsOnOrder}" />
+                    <GridViewColumn Header="Reorder Level" DisplayMemberBinding="{Binding ReorderLevel}" />
+                    <GridViewColumn Header="Discontinued" DisplayMemberBinding="{Binding Discontinued}" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+        <Label Content="Product Information" HorizontalAlignment="Left" Margin="383,210,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+
+        <Button x:Name="btnAddProduct" Content="Add Product" Margin="399,241,0,0" Width="110" HorizontalAlignment="Left" VerticalAlignment="Top" Click="btnAddProduct_Click"/>
+        <Button x:Name="btnUpdateProduct" Content="Update Product" Margin="538,241,0,0" Width="110" HorizontalAlignment="Left" VerticalAlignment="Top" Click="btnUpdateProduct_Click"/>
+        <Button x:Name="btnRemoveProduct" Content="Remove Product" Margin="680,240,0,0" Width="110" HorizontalAlignment="Left" VerticalAlignment="Top" Click="btnRemoveProduct_Click"/>
+
+        <Label Content="ProductID:" Margin="32,237,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtSearchProductID" Margin="112,241,0,0" Width="120" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Button x:Name="btnSearchProduct" Content="Search" Margin="242,239,0,0" Width="70" HorizontalAlignment="Left" VerticalAlignment="Top" Click="btnSearchProduct_Click"/>
+        <Label Content="Search Product" HorizontalAlignment="Left" Margin="32,211,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+    </Grid>
+</Window>

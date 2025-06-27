@@ -1,0 +1,65 @@
+﻿<Window x:Class="WpfApp.UpdateProductDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Update Product" Height="500" Width="550" WindowStartupLocation="CenterScreen">
+    <Grid Margin="20">
+        <Label Content="Update Product" FontSize="16" FontWeight="Bold" Margin="0,0,0,20"/>
+
+        <StackPanel Orientation="Vertical" Margin="0,30,0,0">
+            <StackPanel Orientation="Horizontal" Margin="0,5">
+                <Label Content="ProductID:" Width="140"/>
+                <TextBox x:Name="txtProductID" Width="300"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="0,5">
+                <Label Content="ProductName:" Width="140"/>
+                <TextBox x:Name="txtProductName" Width="300"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="0,5">
+                <Label Content="SupplierID:" Width="140"/>
+                <TextBox x:Name="txtSupplierID" Width="300"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="0,5">
+                <Label Content="CategoryID:" Width="140"/>
+                <TextBox x:Name="txtCategoryID" Width="300"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="0,5">
+                <Label Content="Quantity/Unit:" Width="140"/>
+                <TextBox x:Name="txtQuantityPerUnit" Width="300"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="0,5">
+                <Label Content="Unit Price:" Width="140"/>
+                <TextBox x:Name="txtUnitPrice" Width="300"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="0,5">
+                <Label Content="In Stock:" Width="140"/>
+                <TextBox x:Name="txtUnitsInStock" Width="300"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="0,5">
+                <Label Content="On Order:" Width="140"/>
+                <TextBox x:Name="txtUnitsOnOrder" Width="300"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="0,5">
+                <Label Content="Reorder Level:" Width="140"/>
+                <TextBox x:Name="txtReorderLevel" Width="300"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="0,5">
+                <Label Content="Discontinued:" Width="140"/>
+                <CheckBox x:Name="chkDiscontinued" Width="300"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,20,0,0">
+                <Button x:Name="btnSave" Content="Save" Width="80" Margin="5" Click="btnSave_Click"/>
+                <Button x:Name="btnCancel" Content="Cancel" Width="80" Margin="5" Click="btnCancel_Click"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,20 @@
+﻿<Window x:Class="WpfApp.CustomerMainForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp"
+        mc:Ignorable="d"
+        Title="CustomerMainForm" Height="450" Width="811">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="27*"/>
+            <ColumnDefinition Width="5*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="btnOrderProcessing" Content="Order Processing" HorizontalAlignment="Left" VerticalAlignment="Top" Height="39" Width="241" Margin="135,151,0,0" Click="btnOrderProcessing_Click"/>
+        <Button x:Name="btnProfileEditing" Content="Profile Editing" HorizontalAlignment="Left" Margin="423,152,0,0" VerticalAlignment="Top" Height="38" Width="241" Click="btnProfileEditing_Click"/>
+        <Label Content="Sales Management System (SMS)" HorizontalAlignment="Left" Margin="246,68,0,0" VerticalAlignment="Top" Height="41" Width="308" FontSize="20"/>
+        <Button x:Name="btnExit" Content="Exit to Login Screen" HorizontalAlignment="Left" Margin="246,217,0,0" VerticalAlignment="Top" Height="42" Width="286" Click="btnExit_Click"/>
+
+    </Grid>
+</Window>

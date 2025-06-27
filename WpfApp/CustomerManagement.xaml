@@ -1,0 +1,30 @@
+﻿<Window x:Class="WpfApp.CustomerManagement"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp"
+        mc:Ignorable="d"
+        Title="CustomerManagement" Height="457" Width="706">
+    <Grid Margin="0,0,227,-16">
+        <ListView x:Name="lvCustomer" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,0,0,260">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Ma khach hang" DisplayMemberBinding="{Binding CustomerID}"/>
+                    <GridViewColumn Header="Ten cong ty" DisplayMemberBinding="{Binding CompanyName}"/>
+                    <GridViewColumn Header="Ten lien lac" DisplayMemberBinding="{Binding ContactName}"/>
+                    <GridViewColumn Header="Tieu de lien lac" DisplayMemberBinding="{Binding ContactTitle}"/>
+                    <GridViewColumn Header="Dia chi" DisplayMemberBinding="{Binding Address}"/>
+                    <GridViewColumn Header="So dien thoai" DisplayMemberBinding="{Binding Phone}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button x:Name="btnAddCustomer" Content="Add Customer" HorizontalAlignment="Left" Margin="22,217,0,0" VerticalAlignment="Top" Width="101" Click="btnAddCustomer_Click"/>
+        <Button x:Name="btnRemoveCustomer" Content="Remove Customer" HorizontalAlignment="Left" Margin="22,299,0,0" VerticalAlignment="Top" Click="btnRemoveCustomer_Click"/>
+        <Button x:Name="btnUpdateCustomer" Content="Update Customer" HorizontalAlignment="Left" Margin="22,256,0,0" VerticalAlignment="Top" Width="101" Click="btnUpdateCustomer_Click"/>
+        <Label Content="Ma khach hang:" HorizontalAlignment="Left" Margin="142,254,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtCustomerID_Search" HorizontalAlignment="Left" Margin="243,258,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Search Customer" HorizontalAlignment="Left" Margin="142,219,0,0" VerticalAlignment="Top" Width="149" FontWeight="Bold"/>
+        <Button x:Name="btnSearch" Content="Search" HorizontalAlignment="Left" Margin="379,256,0,0" VerticalAlignment="Top" Width="74" Click="btnSearch_Click"/>
+    </Grid>
+</Window>

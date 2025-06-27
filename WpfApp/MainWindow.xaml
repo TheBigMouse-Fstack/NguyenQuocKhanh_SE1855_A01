@@ -1,0 +1,16 @@
+﻿<Window x:Class="WpfApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp"
+        mc:Ignorable="d"
+        Title="SE193464-NguyenQuocKhanh" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="btnCustomerManagement" Content="Customer Management" HorizontalAlignment="Left" VerticalAlignment="Top" Height="43" Width="286" Margin="91,169,0,0" Click="btnCustomerManagement_Click"/>
+        <Button x:Name="btnProductManagement" Content="Product Management" HorizontalAlignment="Left" Margin="440,170,0,0" VerticalAlignment="Top" Height="42" Width="286" Click="btnProductManagement_Click"/>
+        <Button x:Name="btnOrderProcessing" Content="Order Processing" HorizontalAlignment="Left" Margin="91,242,0,0" VerticalAlignment="Top" Height="43" Width="286" Click="btnOrderProcessing_Click"/>
+        <Label Content="Sales Management System (SMS)" HorizontalAlignment="Center" Margin="0,87,0,0" VerticalAlignment="Top" Height="41" Width="308" FontSize="20"/>
+        <Button x:Name="btnExit" Content="Exit" HorizontalAlignment="Left" Margin="440,237,0,0" VerticalAlignment="Top" Height="43" Width="286" Click="btnExit_Click"/>
+    </Grid>
+</Window>
